@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; transform: translateY(-860px); color: white;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .main_desk{margin: 0; transform: translate(-20px, -20px);}
+    .card_back{transform: translate(230px, -520px);margin: 0px; padding: 0px; border: 0 ;}
+    .card_front{transform: translate(150px, -540px); margin: 0px; padding: 0px;}
+
+    .num_front{transform: translate(555px, -633px); color: white ;} 
+    .num_back{transform: translate(175px, -855px); color: white ; font-size: 40px;}
+    .name{transform: translate(175px, -840px); color: white ;}
+    .date{transform: translate(490px, -856px); color: white ;}
+
+    #nam{transform: translate(800px, -950px); color: black; width: 300px; height: 25px;}
+    .to_name{transform: translate(800px, -935px); color: black; text-transform: uppercase;}
+
+    #num_card{transform: translate(800px, -950px); color: black; width: 300px; height: 25px;}
+    .card{transform: translate(800px, -935px); color: black; text-transform: uppercase;}
+
+    #date_card{transform: translate(800px, -950px); color: black; width: 70px; height: 25px;}
+    .date_card{transform: translate(800px, -935px); color: black; text-transform: uppercase;}
+
+    #cvc_card{transform: translate(1000px, -1017px); color: black; width: 100px; height: 25px;}
+    .cvc_card{transform: translate(1000px, -1000px); color: black; text-transform: uppercase;}
+
+    #Confirm{transform: translate(690px, -970px); color: black; width: 310px; height: 35px; 
+      background-color: rgb(63, 1, 92); border-radius: 5px; color: white;}
+
+    .tha{transform: translate(450px, -850px); color: black;}
+
+    
+
+  </style>
+</head>
+<body>
+
+  <div class="main_desk"><img src="/images/bg-main-desktop.png" width="440px" height="630px"></div>
+  <div class="card_front"><img src="/images/bg-card-front.png" width="400px" height="200px"></div>
+  <div class="card_back"><img src="/images/bg-card-back.png" width="400px" height="200px"></div>
+  
+
+  <div class="num_front">000</div>
+  <div class="num_back">0000 0000 0000 0000</div>
+  <div class="name">Jafar Mohammed</div>
+  <div class="date">00/00</div>
+
+  
+  <div class="to_name">Cardholder Name</div> <br>
+  <input id="nam" type="text" name="enter_name" required placeholder="e.g. Jafar Mohammed"> 
+
+  <div class="card">Card Number</div> <br>
+  <input id="num_card" type="number" required placeholder="e.g. 1234 5678 9123 0000">
+
+  <div class="date_card">Exp. Date (MM/YY)</div> <br>
+  <input id="date_card" type="number" required placeholder="MM"> <input id="date_card" type="number" required placeholder="YY"> 
+
+  <div class="cvc_card">CVC</div> <br>
+  <input type="number" id="cvc_card" required placeholder="e.g. 123">
+
+  <input type="submit" id="Confirm" value="Confirm">
+
+  <div class="tha">Thank you! We've added your card details Continue</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> 
+</body>
+</html>
